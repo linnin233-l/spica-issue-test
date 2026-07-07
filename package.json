@@ -1,0 +1,9 @@
+{
+  "name": "spica-issue-test",
+  "version": "1.0.0",
+  "description": "Simple calculator with bugs for testing",
+  "main": "calc.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
