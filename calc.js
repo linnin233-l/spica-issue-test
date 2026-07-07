@@ -21,7 +21,7 @@ function divide(a, b) {
 // BUG: sum function has off-by-one error in loop
 function sum(arr) {
   let total = 0;
-  for (let i = 0; i < arr.length - 1; i++) {  // BUG: should be i < arr.length
+  for (let i = 0; i < arr.length; i++) {
     total += arr[i];
   }
   return total;

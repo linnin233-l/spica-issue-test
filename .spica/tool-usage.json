@@ -1,0 +1,13 @@
+{
+  "counts": {
+    "glob": 1,
+    "read": 5,
+    "bash": 7,
+    "write": 1,
+    "skill": 1,
+    "edit": 1,
+    "lint": 1
+  },
+  "sessions": 0,
+  "lastUpdated": "2026-07-07T14:25:59.664Z"
+}
