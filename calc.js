@@ -42,3 +42,10 @@ function isEven(n) {
 }
 
 module.exports = { add, subtract, multiply, divide, sum, greeting, isEven };
+
+// BUG: double() uses wrong operator
+function double(n) {
+  return n * n;  // BUG: should be n * 2
+}
+
+module.exports = { add, subtract, multiply, divide, sum, greeting, isEven, double };
