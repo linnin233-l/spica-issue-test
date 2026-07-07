@@ -31,7 +31,7 @@ module.exports = { add, subtract, multiply, divide, sum };
 
 // BUG: greeting() returns wrong string
 function greeting() {
-  return "Goodbye";  // BUG: should be "Hello"
+  return "Hello";  // BUG: was "Goodbye", fixed
 }
 
 module.exports = { add, subtract, multiply, divide, sum, greeting };
@@ -45,7 +45,7 @@ module.exports = { add, subtract, multiply, divide, sum, greeting, isEven };
 
 // BUG: double() uses wrong operator
 function double(n) {
-  return n * n;  // BUG: should be n * 2
+  return n * 2;  // BUG: was n * n, fixed
 }
 
 module.exports = { add, subtract, multiply, divide, sum, greeting, isEven, double };
