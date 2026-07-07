@@ -35,3 +35,10 @@ function greeting() {
 }
 
 module.exports = { add, subtract, multiply, divide, sum, greeting };
+
+// BUG: isEven() uses wrong operator
+function isEven(n) {
+  return n / 2 === 0;  // BUG: should be n % 2 === 0
+}
+
+module.exports = { add, subtract, multiply, divide, sum, greeting, isEven };

@@ -1,14 +1,7 @@
 const calc = require('./calc.js');
-
-let passed = 0;
-let failed = 0;
-
-function assert(condition, msg) {
-  if (condition) { passed++; console.log('PASS: ' + msg); }
-  else { failed++; console.log('FAIL: ' + msg); }
-}
-
-assert(calc.greeting() === 'Hello', 'greeting() returns Hello');
-
-console.log('\n' + passed + ' passed, ' + failed + ' failed');
-process.exit(failed > 0 ? 1 : 0);
+let p=0,f=0;
+function assert(c,m){if(c){p++;console.log('PASS: '+m)}else{f++;console.log('FAIL: '+m)}}
+assert(calc.isEven(4)===true,'isEven(4) = true');
+assert(calc.isEven(3)===false,'isEven(3) = false');
+console.log('\n'+p+' passed, '+f+' failed');
+process.exit(f>0?1:0);
