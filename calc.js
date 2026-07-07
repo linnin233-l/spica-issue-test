@@ -28,3 +28,10 @@ function sum(arr) {
 }
 
 module.exports = { add, subtract, multiply, divide, sum };
+
+// BUG: greeting() returns wrong string
+function greeting() {
+  return "Goodbye";  // BUG: should be "Hello"
+}
+
+module.exports = { add, subtract, multiply, divide, sum, greeting };
